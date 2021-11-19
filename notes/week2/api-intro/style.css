@@ -1,0 +1,11 @@
+.container {
+    margin: 100px auto;
+    background-color: lightgoldenrodyellow;
+    height: 100vh;
+    padding: 100px;
+    text-align: center;
+}
+
+#image1 {
+    width: 400px;
+}
