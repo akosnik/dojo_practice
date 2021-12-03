@@ -1,0 +1,23 @@
+- make sure you are in the dsirectory of your proj
+
+-install pipenv if you havent already
+pip install pipenv
+
+-install flask (with virtual env)
+pipenv install flask
+
+-run the venv
+pipenv shell
+
+-start the proj with
+python server.py
+
+!!!!!!!!!!!!!!!!!!..........THIS ALLOWS US TO USE THE FLASK FRAMEWORK.................!!!!!!!!!!!!!!!!!!!!!!!!!!!
+from flask import Flask, app  #.............. Imports Flask to be able to use
+app = Flask(name) #...................... Create a new instance of a Flask "app"
+@app.route('/') # ........................... The @ decorator associates this routh with the functions that immediately follow
+
+def hello_world():  #......................... Code begins...This will function's value will return in browser
+    return 'Hello World!'
+if name == "main":  #.................  Ensures that this file is being run DIRECTLY and from a different module
+    app.run(debug=True) #..................... Runs the app in debug mode

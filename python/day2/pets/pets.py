@@ -9,6 +9,7 @@ class Pet:
 
     def sleep(self):
         self.energy += 25
+        print("ZzzZzz")
 
     def eat(self):
         self.energy += 5
@@ -41,3 +42,6 @@ class Fish(Pet):
 class Snake(Pet):
     def noise(self):
         print("Sssss")
+
+
+ryuk = Cat("ryuk", "Black short hair", ["Cuddle"], 70, 50)
