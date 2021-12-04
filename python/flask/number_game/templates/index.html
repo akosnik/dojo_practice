@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Can you read my mind?</h1>
+        <h2>I'm thinking of a number between {{min}} and {{max}}:</h2>
+        <form action='/guess' method='POST' style="background-color: {{form_color}}">
+            <h3 style="visibility: {{hi_vis}};">Too High!</h3>
+            <input type="number" name="num" min={{min}} max={{max}}><br>
+            <input type="submit" value="Guess">
+            <h3 style="visibility: {{lo_vis}};">Too Low!</h3>
+        </form>
+        <a href="/setup">Restart!</a>
+    </div>
+</body>
+
+</html>
