@@ -22,11 +22,39 @@ class Player():
     def sort_hand(self):
         self.hand.sort(key=lambda card: card.value)
 
+    def has_card(self, suit, value):
+        for card in self.hand:
+            if card.suit == suit and card.value == value:
+                return True
+        return False
 
-# deck = Deck()
-# allen = Player()
-# card = deck.deal_from_top()
-# allen.take_card(card)
+    def has_suit(self, suit):
+        for card in self.hand:
+            if card.suit == suit:
+                return True
+        return False
 
-# print(allen.hand)
-# print(allen.card_value_counter)
+    def has_value(self, value):
+        if self.card_value_counter[value] > 0:
+            return True
+        return False
+
+    def remove_value(self, value):
+        remove_list = []
+        i = 0
+        while (i < len(self.hand) and len(self.hand) > 0):
+            if self.hand[i].value == value:
+                remove_list[i] = self.hand.pop(i)
+                break
+            i += 1
+        return remove_list
+
+    def remove_suit(self, suit):
+        remove_list = []
+        i = 0
+        while (i < len(self.hand) and len(self.hand) > 0):
+            if self.hand[i].suit == suit:
+                remove_list[i] = self.hand.pop(i)
+                break
+            i += 1
+        return remove_list

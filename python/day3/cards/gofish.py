@@ -9,6 +9,7 @@ class Go_Fish:
         self.deck = Deck()
         self.player = Player()
         self.opponent = Player()
+        self.turn_tracker = []
         self.book = []
         self.cli = CLI(self.player, self.opponent)
         self.deal_cards()
@@ -27,11 +28,6 @@ class Go_Fish:
                 self.books.append(card_value)
                 self.books.sort()
 
-    def remove_cards_of_value_from_hand(self, target_value, player):
-        for card_in_hand in player.hand:  # Needs to be Recursive
-            if card_in_hand.value == target_value:
-                player.remove_card(card_in_hand)
-
     def current_player(self):
         for player in players:
             if player.turn == true:
@@ -41,12 +37,14 @@ class Go_Fish:
         # make function to receive request, accept j, q, k, don't break on other letters
         request = int(input(f'{self.player.name}, choose a card to fish for.'))
         if self.is_valid_request(request):
-            for card in self.opponent.hand:
-                if card.value == request:  # TODO removing a card changes index mid loop WOOPS
-                    # try a recursive function?
-
-                    self.opponent.remove_card(card)
-                    self.player.take_card(card)
+            i = 0
+            o_hand = self.opponent.hand
+            while(i < len(o_hand) and len(p_hand) > 0):
+                if o_hand[i].value == request:
+                    self.player.take_card(o_hand[i])
+                    self.opponent.remove_card(o_hand[i])
+                    break
+                i += 1
             self.update_display()
         else:
             print('Make sure the value you request is one in your hand.')
@@ -71,6 +69,32 @@ class Go_Fish:
     def update_display(self):
         self.cli.update_board_display(
             self.book, self.deck, self.player, self.opponent)
+
+
+class Book:
+
+    def __init__(self):
+        this.booked_list = []
+
+    def hasBook(self, player):
+        for number, count in player.card_value_counter.items():
+            if count == 4:
+                this.booked_list.append(number)
+                player.remove_value(number)
+
+
+class Turn:
+
+    def __init__(self):
+        this.turn_order = []
+        this.current_player = ''
+
+    def get_current_player(self):
+        if len(this.turn_order) > 0:
+            return this.turn_order[0]
+        return ''
+
+    def pass_turn(self):
 
 
 new_game = Go_Fish()
