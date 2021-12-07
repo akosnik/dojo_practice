@@ -1,0 +1,34 @@
+USE users_schema
+
+INSERT INTO users (first_name, last_name, email)
+VALUES('Allen', 'Kosnik', 'allen@cool.com')
+
+INSERT INTO users (first_name, last_name, email)
+VALUES('Dani', 'Kosnik', 'dani@cool.com')
+
+INSERT INTO users (first_name, last_name, email)
+VALUES('Pip', 'Kosnik', 'pippa@cool.com')
+
+INSERT INTO users (first_name, last_name, email)
+VALUES('Pip', 'Kosnik', 'pippa@cool.com')
+
+SELECT * FROM USERS
+
+DELETE FROM users WHERE id = 3
+
+SELECT * FROM users
+WHERE email = 'allen@cool.com'
+
+SELECT * FROM users
+WHERE id = 4
+
+INSERT INTO users (first_name, last_name, email)
+VALUES('Smokey', 'Kosnik', 'smokey@cool.com')
+
+UPDATE users SET last_name = 'Waffles'
+WHERE id = 5
+
+SELECT * FROM users
+
+SELECT * FROM users
+ORDER BY first_name DESC
