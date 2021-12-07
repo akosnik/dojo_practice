@@ -1,0 +1,35 @@
+USE dojos_and_ninjas_schema
+
+INSERT INTO dojos (name)
+VALUES ('Chicago')
+
+INSERT INTO dojos (name)
+VALUES ('Seattle')
+
+INSERT INTO dojos (name)
+VALUES ('Los Angeles')
+
+DELETE FROM dojos WHERE id > 0
+
+INSERT INTO dojos (name)
+VALUES
+('Chicago'), ('Seattle'), ('San Diego')
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES
+('Allen', 'Kosnik', 33, 4), ('Pip', 'Kosnik', 4, 4), ('Smokey', 'Kosnik', 2, 4)
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES
+('Dani', 'Kosnik', 32, 5), ('Ryuk', 'Kosnik', 1, 5), ('Rebecca', 'Cosmic', 36, 5)
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES
+('Dustin', 'Cosmic', 36, 6), ('Leo', 'Cosmic', 5, 6), ('Orion', 'Cosmic', 6, 6)
+
+SELECT * FROM ninjas WHERE dojo_id = 4
+
+SELECT * FROM ninjas WHERE dojo_id = 5
+
+SELECT * FROM ninjas WHERE dojo_id = 6
+
