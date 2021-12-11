@@ -42,6 +42,12 @@ class User:
     def validate_user(user):
         is_valid = True  # we assume this is true
         email = user['email']
+        query = "SELECT email FROM users WHERE email = (%(email)s)"
+        results = connectToMySQL('db').query_db(query, user)
+        print(results)
+        if results == []:
+            flash("Email already exists")
+            is_valid = False
         if (len(email) == 0 or len(email) > 45 or not EMAIL_REGEX.match(email)):
             flash("Please enter a valid email up to 45 characters.")
             is_valid = False

@@ -14,18 +14,18 @@
     <div class="container">
         <form action="/" method="POST">
             <h1>Please Enter Your Information</h1>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
             <div class="form-group alert alert-warning" role="alert">
-                {% with messages = get_flashed_messages() %}
-                {% if messages %}
                 Looks like ya goofed
                 <ul>
                     {% for message in messages %}
                     <li>{{ message }}</li>
                     {% endfor %}
                 </ul>
-                {% endif %}
-                {% endwith %}
             </div>
+            {% endif %}
+            {% endwith %}
             <div class="form-group">
                 <label for="">Email</label>
                 <input name="email" type="email" class="form-control" placeholder="name@example.com">
