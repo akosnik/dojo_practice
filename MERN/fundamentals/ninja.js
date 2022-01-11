@@ -33,3 +33,6 @@ ninja1.sayName();
 ninja1.showStats();
 ninja1.drinkSake();
 ninja1.showStats();
+
+const sensei1 = new Sensei("Panda");
+sensei1.speakWisdom();
