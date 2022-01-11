@@ -4,7 +4,6 @@ function quickSort(arr, front, back) {
   }
 
   pivot = arr[Math.floor((front + back) / 2)];
-  console.log(pivot);
 
   let i = front;
   let j = back;
@@ -21,9 +20,9 @@ function quickSort(arr, front, back) {
 
   quickSort(arr, front, pivotIndex - 1);
   quickSort(arr, pivotIndex + 1, back);
-  return arr;
+  return;
 }
 
 arr = [0, 5, 7, 9, 6, 8, 4, 1, 3, 2];
-
-console.log(quickSort(arr, 0, arr.length - 1));
+quickSort(arr, 0, arr.length - 1);
+console.log(arr);
