@@ -21,3 +21,28 @@ React uses objects called components. You can create components with React.creat
 - Children
   - could be a descriptive tag
   - or a nested component
+
+It also needs to know when to render the components onto the screen.
+
+ReactDOM.render()
+
+### JSX
+
+JS Syntax Extension allows us to type more readable components.
+Instead of
+
+```js
+ReactDOM.render(
+  React.createElement("h1", null, "Hello World"),
+  document.getElementById("root")
+);
+```
+
+we can type
+
+```js
+ReactDOM.render(<h1>Hello world</h1>, document.getElementById("root"));
+```
+
+This is translated with the help of Babel into plain javascript.
+JSX makes our components more readable and easier to type.
