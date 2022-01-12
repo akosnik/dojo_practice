@@ -1,6 +1,8 @@
 import "./App.css";
 
-import PersonCard from "./components/PersonCardComponent";
+// import PersonCard from "./components/PersonCardComponent";
+import PersonCard from "./components/PersonCardFunctionalComponent";
+
 
 function App() {
   return (
