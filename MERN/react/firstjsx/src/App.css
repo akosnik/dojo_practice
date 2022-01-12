@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: grid;
+  grid-gap: 1rem;
+  max-width: 300px;
+  margin: 2rem auto;
+  border: 2px solid black;
+  padding: 2rem;
+}
+
+.App ul {
+  padding-inline-start: 1.5rem;
+}
