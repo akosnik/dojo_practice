@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: grid;
+  justify-content: center;
+}
+
+.personCard {
+  display: grid;
+  grid-gap: 0.5rem;
+  margin-block-start: 2rem;
+}
+
+.personCard p,
+.personCard h1 {
+  padding: 0 1rem;
+}
+
+.personCard button {
+  padding: 0.5em 1em;
+}
