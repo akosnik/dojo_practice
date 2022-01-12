@@ -12,7 +12,9 @@
 
 ## Using React
 
-React uses objects called components. You can create components with React.createElement and pass it three things.
+### Components
+
+React uses objects called components. You can create components with React.createElement and pass it three things (JSX does this in a nicer way).
 
 - Type
   - ex: "h1"
@@ -51,3 +53,53 @@ There are a few rules to watch out for. Because keywords like class and for exis
 - class is className
 - for is htmlFor
 - [more differeneces](https://reactjs.org/docs/dom-elements.html)
+
+### Class Components
+
+Class components are the blueprints to making a specific type of component over and over again. The following code highlights the necessary parts:
+
+- Capitalized name
+  - SomeClassComponent
+- extends React.Component
+  - imported at top
+- implements render() method
+  - this example returns a JSX component
+
+```js
+import React, { Component } from "react";
+
+class SomeClassComponent extends Component {
+  render() {
+    return <div>This is our first class component.</div>;
+  }
+}
+
+export default SomeClassComponent;
+```
+
+### Props
+
+> Short for properties
+
+This empty object is passed to component by default. Data flows downward in React. A parent component is able to pass its props down to its children and so on.
+
+```js
+class Header extends React.Component {
+  render() {
+    return (
+      // alternative 1: you can destructure props
+      // const {firstName, lastName} = this.props;
+      <div>
+        // By inheriting from React.Component all we need is the "this" keyword
+        in front of props.
+        <h1>
+          My name is {this.props.firstName} {this.props.lastName}
+          /* alternative 1: Following the alternative 1 above: this line would be
+          written differently. {this.props.firstName} would just be {firstName} and
+          similarly for the next prop. */
+        </h1>
+      </div>
+    );
+  }
+}
+```
