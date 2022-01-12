@@ -6,10 +6,7 @@ import Advertisement from './AdvertisementComponent';
 class Main extends Component {
   render() {
     return (<div className={ styles.main }>
-      <SubContents></SubContents>
-      <SubContents></SubContents>
-      <SubContents></SubContents>
-      <Advertisement></Advertisement>
+      { this.props.children }
     </div>);
   }
 }
