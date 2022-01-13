@@ -10,6 +10,8 @@
 - Can utilize JS's built in DOM manipulation.
 - Widely used and highly rated among users.
 
+---
+
 ## Using React
 
 ### Components
@@ -142,6 +144,8 @@ class LightSwitch extends Component {
 export default LightSwitch;
 ```
 
+---
+
 ## Lifecycle Methods
 
 Components go through a lifecycle from creation, mounting, unmounting, to destruction. The background functions that deal with this are called lifecycle methods.
@@ -171,6 +175,8 @@ The final stage, React unmounts components and removes them from DOM
 - componentWillUnmount()
   - a good place to cancel subscriptions, network requests, or clear timers
 
+---
+
 ## Styling
 
 Use CSS modules with React. This allows us to encapsulate our styling and apply it only when appropriate. It also allows us to dynamicaly change the stylign and use pseudo-classes.
@@ -189,4 +195,32 @@ class MyButton extends Component {
 }
 
 export default MyButton;
+```
+
+---
+
+## Functional Components
+
+React is moving away from class components and towards functional ones. The writing tends to be shorter and simpler. With hooks, they even have the ability to access state values when before that was something only class components could do.
+
+### Hooks
+
+Generally speaking, a hook is a function that allows you to use a certain piece of functionality. Normally, only class components can use state values. By implementing useState, functional components can use the state functionality as well.
+
+> Why not use class components if they have the functionality built in?
+
+With class components, stateful logic is hard to reuse. So if two components are going to behave similarly, functional components would be appropriate. There may even be performance benefits compared to class components.
+
+```js
+import React, { useState } from "react";
+
+const Counter = (props) => {
+  const [state, setState] = useState({
+    clickCount: 0,
+  });
+
+  return <div>{state.clickCount}</div>;
+};
+
+export default Counter;
 ```
