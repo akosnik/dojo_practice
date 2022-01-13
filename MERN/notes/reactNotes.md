@@ -213,14 +213,22 @@ With class components, stateful logic is hard to reuse. So if two components are
 
 ```js
 import React, { useState } from "react";
+// a destructured import statement for useState
 
 const Counter = (props) => {
-  const [state, setState] = useState({
-    clickCount: 0,
-  });
+  const [count, setCount] = useState(0);
+  // instead of a class with a constructor,
+  // we invoke useState for each variable we want to track
 
-  return <div>{state.clickCount}</div>;
+  return (
+    <button onClick={() => setCount(count + 1)}>Clicked {count} times</button>
+    // here the onclick method is attached to the function that calls useState to update count
+  );
 };
 
 export default Counter;
 ```
+
+useState takes in the initial state as the argument. This could also be written as `useState(0)` instead of an object for the above example. If you want to store two variables, apply useState twice.
+
+What useState returns is two things, the current value and a function that updates it. The function is called setCount and is defined inline on the button element. More complex functions can be defined before the return statement. They still need to be attached. ex: `<button onClick={ setCount }> ...`
