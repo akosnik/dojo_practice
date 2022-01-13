@@ -1,7 +1,7 @@
 .userForm {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   padding: 15px;
   margin-top: 2rem;
 
@@ -13,7 +13,12 @@
 
 .userForm div {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.userForm p {
+  color: rgb(175, 35, 0);
 }
 
 .userForm input {
