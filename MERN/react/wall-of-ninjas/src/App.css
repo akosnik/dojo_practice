@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #272727;
+}
+
+.App {
+  color: aliceblue;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form > * {
+  margin-bottom: 1rem;
+}
+
+form .btn {
+  padding: 0.5rem 1rem;
+  color: white;
+  border: 2px solid white;
+  background: #373737;
+}
+
+.Ninja {
+  border: 2px solid black;
+}
