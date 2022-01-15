@@ -1,0 +1,31 @@
+body {
+  background: #272727;
+  color: white;
+}
+
+.App {
+  display: grid;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.form-input {
+  margin-right: 10px;
+}
+
+.todos {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+}
+
+.todos .delete {
+  padding: 0.2rem 0;
+}
