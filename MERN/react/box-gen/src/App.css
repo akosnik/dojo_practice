@@ -1,0 +1,26 @@
+body {
+  background: #272727;
+  color: white;
+}
+
+.App {
+  display: grid;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+form {
+  margin-bottom: 2rem;
+}
+
+.boxes {
+  display: grid;
+  justify-content: center;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, 100px);
+}
