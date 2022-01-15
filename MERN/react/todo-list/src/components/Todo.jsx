@@ -32,6 +32,7 @@ const Todo = () => {
 
   return (
     <div>
+      <h1>Todo List</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <input className="form-input" type="text" name="todo" id="todoInput" onChange={(e)=>setTodo(e.target.value)}/>
