@@ -4,17 +4,16 @@ function strToWordArr(str) {
   for (let i = 0; i < str.length; i++) {
     // console.log(str[i]);
     if (str[i] === " ") {
-      // this finds the first space
-      while (str[i] === " ") {
-        // skips through any following spaces
-        i++;
-      }
+      // if we have a space, we probably finished a word
+
       if (word != "") {
-        result.push(word); // add the word that preceded the space
-        word = ""; // reset word
+        // we know we have a new word if this isn't empty
+        result.push(word);
+        word = "";
       }
+    } else {
+      word += str[i]; // if character is not a space, we add it to current word
     }
-    word += str[i];
   }
   return result;
 }
