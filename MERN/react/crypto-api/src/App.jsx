@@ -1,10 +1,12 @@
 import './App.css';
-import CryptoCoinsUsingFetch from './components/CryptoCoinsUsingFetch';
+// import PokemonUsingFetch from './components/PokemonUsingFetch'
+import PokemonUsingAxios from './components/PokemonUsingAxios';
 
 function App() {
   return (
     <div className="App">
-      <CryptoCoinsUsingFetch></CryptoCoinsUsingFetch>
+      {/* <PokemonUsingFetch></PokemonUsingFetch> */}
+      <PokemonUsingAxios></PokemonUsingAxios>
     </div>
   );
 }

@@ -7,4 +7,9 @@ body {
   display: grid;
   justify-content: center;
   margin-top: 2rem;
+  grid-gap: 3rem;
+}
+
+.coin__image {
+  max-width: 40px;
 }
