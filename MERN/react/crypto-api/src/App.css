@@ -1,0 +1,10 @@
+body {
+  background: #272727;
+  color: white;
+}
+
+.App {
+  display: grid;
+  justify-content: center;
+  margin-top: 2rem;
+}
