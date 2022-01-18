@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
 
 
-
-const Todo = () => {
+const TodoList = () => {
 
   const [todo, setTodo] = useState('');
   const [isComplete, setIsComplete] = useState(false);
@@ -16,7 +15,7 @@ const Todo = () => {
     };
     let newTodoList = [...todoList, todoObj];
     setTodoList(newTodoList);
-    document.getElementById('todoInput').value = '';
+    setTodo('');
   }
 
   const toggleComplete = (i) => {
@@ -26,7 +25,7 @@ const Todo = () => {
   }
 
   const deleteTodo = (i) => {
-    let copyTodoList = todoList.filter((todo, idx) => idx != i);
+    let copyTodoList = todoList.filter((todo, idx) =>  idx != i);
     setTodoList(copyTodoList);
   }
 
@@ -35,16 +34,16 @@ const Todo = () => {
       <h1>Todo List</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <input className="form-input" type="text" name="todo" id="todoInput" onChange={(e)=>setTodo(e.target.value)}/>
+          <input className="form__input" type="text" name="todo" id="todoInput" value={todo} onChange={(e)=>setTodo(e.target.value)}/>
           <input className="btn btn-primary" type="submit" value="Add" />
         </div>
       </form>
       <div className="todos">
       {
-        todoList.map((todo, i) => {
+        todoList.map((todoItem, i) => {
           return (
             <>
-              <span key={i} style={{textDecoration: todo.isComplete? 'line-through': 'none'}}>{todo.todo}</span>
+              <span key={i} style={{textDecoration: todoItem.isComplete? 'line-through': 'none'}}>{todoItem.todo}</span>
               <input type="checkbox" name="isTodoComplete" id="todoCheck" onClick={()=>toggleComplete(i)}/>
               <input className="delete btn btn-light" type="button" value="Delete" onClick={()=>deleteTodo(i)}/>
             </>
@@ -56,4 +55,5 @@ const Todo = () => {
   )
 }
 
-export default Todo;
+export default TodoList;
+
