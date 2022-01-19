@@ -1,7 +1,8 @@
 import './App.css';
 import {BrowserRouter, Link, Switch, Route} from 'react-router-dom';
 import Profile from './components/Profile';
-import Group from './components/Group';
+import Notice from './components/Notice';
+import Noticed from './components/Noticed';
 // Browser Router enables routing in enclosed elements
 // Link tag replaces anchor tags. Link does not reload page when anchor would
 // Switch defines our routes and attaches components to them
@@ -16,7 +17,7 @@ function App() {
           <span> || </span>
           <Link to="/profile">Profile</Link>
           <span> || </span>
-          <Link to="/groups">Groups</Link>
+          <Link to="/notice">Notice</Link>
         </span>
 
         <Switch>
@@ -29,8 +30,11 @@ function App() {
           <Route exact path="/profile/:id/:color/:size">
             <Profile></Profile>
           </Route>
-          <Route exact path="/groups">
-            <Group></Group>
+          <Route exact path="/notice">
+            <Notice></Notice>
+          </Route>
+          <Route exact path="/noticed">
+            <Noticed></Noticed>
           </Route>
         </Switch>
 
