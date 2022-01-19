@@ -7,7 +7,11 @@ export default function Profile() {
   
   return (
     <div>
-      <h1 style={{color: color, fontSize: `${size}px`}}>#{id} PROFILE PAGE</h1>
+      { isNaN(id)
+      ?<h1 style={{color: color, fontSize: `${size}px`}}>{id}'s PROFILE PAGE</h1>
+      :<h1 style={{color: color, fontSize: `${size}px`}}>PROFILE PAGE #{id}</h1>
+      }
+      
     </div>
   );
 }
