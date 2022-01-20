@@ -6,8 +6,6 @@ const PokemonUsingAxios = () => {
 
   const [listOfPokemon, setListOfPokemon] = useState([])
 
-  
-
   const getPokemon = () => {
     axios.get("https://pokeapi.co/api/v2/pokemon?limit=898")
     .then(response => {
@@ -17,7 +15,6 @@ const PokemonUsingAxios = () => {
     .catch(err => {
       console.log("There was an error:", err)
     })
-    
   }
 
   useEffect(getPokemon, []);

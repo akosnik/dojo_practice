@@ -1,3 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  height: 100vh;
+  background: #272727;
+  color: white;
+}
+
+.search-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-items * {
+  background: #272727;
+  border-radius: 3px;
+  border: none;
+}
+
+.input-id {
+  max-width: 3.5rem;
+  padding: 0.25rem 0rem 0.25rem 1rem;
+}
+
+.input-id,
+.select-criteria,
+.search-option {
+  background: #ddd;
+}
+
+.btn-search {
+  background: rgb(211, 193, 94);
+}
+
+.select-criteria,
+.btn-search,
+.search-option {
+  padding: 0.25rem 1rem;
 }
