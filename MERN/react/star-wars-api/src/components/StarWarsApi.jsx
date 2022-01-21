@@ -1,17 +1,20 @@
 import React, { useState, useEffect } from 'react';
-
+import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
 export default function StarWarsApi() {
   
+  const history = useHistory();
+
   const [criteriaList, setCriteriaList] = useState([]);
   const [criteria, setCriteria] = useState('');
   const [searchId, setSearchId] = useState(0);
+
   
   const getApiSearchCriteria = () => {
     axios.get("https://swapi.dev/api/") // people, vehicles, ...etc
     .then(response => {
-      // console.log(Object.keys(response.data))
+      console.log(response.data)
       setCriteriaList(Object.keys(response.data))
       setCriteria(Object.keys(response.data)[0])
     })
@@ -24,13 +27,15 @@ export default function StarWarsApi() {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(criteriaList)
-    // axios.get("swapi.dev/api/planets/1/")
+
+    let path = `/${criteria}/${searchId}`
+    history.push(path);
   }
   
   return (
     
       <form onSubmit={handleSubmit} className='search-form'>
+        <h1>Search the Star Wars API</h1>
         <div className="search-items">
           
           <label htmlFor="select-criteria">Search for:</label>
@@ -45,11 +50,10 @@ export default function StarWarsApi() {
             }
           </select>
 
-            {/* Try putting a text field for searching here */}
+            {/* TODO: Try putting a text field for searching here */}
             
           <label htmlFor="idInput">ID:</label>
           <input type="number" name="idInput" className='input-id' placeholder='0' onChange={(e) => setSearchId(e.target.value)}/>
-          
           <input type="submit" value="Search" className='btn-search'/>
         </div>       
       </form>

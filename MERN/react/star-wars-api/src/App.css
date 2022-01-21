@@ -4,11 +4,21 @@
   box-sizing: border-box;
 }
 
+:root {
+  --darkGray: #272727;
+  --yellow: rgb(211, 193, 94);
+  --lightGray: #ddd;
+}
+
 .App {
   text-align: center;
   height: 100vh;
-  background: #272727;
+  background: var(--darkGray);
   color: white;
+}
+
+form h1 {
+  padding: 2rem 0;
 }
 
 .search-items {
@@ -19,7 +29,7 @@
 }
 
 .search-items * {
-  background: #272727;
+  background: var(--darkGray);
   border-radius: 3px;
   border: none;
 }
@@ -32,15 +42,43 @@
 .input-id,
 .select-criteria,
 .search-option {
-  background: #ddd;
+  background: var(--lightGray);
 }
 
 .btn-search {
-  background: rgb(211, 193, 94);
+  background: var(--yellow);
 }
 
 .select-criteria,
 .btn-search,
 .search-option {
   padding: 0.25rem 1rem;
+}
+
+.SearchResults {
+  margin-top: 3rem;
+  perspective: 140px;
+}
+
+.crawlText {
+  text-align: justify;
+  color: var(--yellow);
+  transform: rotatex(30deg);
+  height: 300px;
+  padding: 0 12rem;
+}
+
+.attributes {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+
+.attributes li {
+  text-decoration: none;
+}
+
+.link {
+  color: var(--yellow);
+  text-decoration: none;
 }
