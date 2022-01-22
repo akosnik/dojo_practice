@@ -1,0 +1,11 @@
+https://pokeapi.co/api/v2/pokemon/omanyte
+
+https://pokeapi.co/api/v2/pokemon/pidgeot
+
+https://pokeapi.co/api/v2/pokemon/zapdos
+
+https://pokeapi.co/api/v2/pokemon/nidoking
+
+https://pokeapi.co/api/v2/pokemon/lapras
+
+https://pokeapi.co/api/v2/pokemon/venomoth
