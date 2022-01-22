@@ -56,7 +56,9 @@ form h1 {
 }
 
 .SearchResults {
+  margin: 0 auto;
   margin-top: 3rem;
+  max-width: 300px;
   perspective: 140px;
 }
 
@@ -65,7 +67,6 @@ form h1 {
   color: var(--yellow);
   transform: rotatex(30deg);
   height: 300px;
-  padding: 0 12rem;
 }
 
 .attributes {

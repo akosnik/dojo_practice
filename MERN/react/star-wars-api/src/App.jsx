@@ -17,6 +17,9 @@ function App() {
           <Route exact path="/:criteria/:id">
             <SearchResult />
           </Route>
+          {/* <Route exact path="/error">
+            <ErrorComponent />
+          </Route> */}
         </Switch>
       </div>
     </BrowserRouter>
