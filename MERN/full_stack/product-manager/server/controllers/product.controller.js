@@ -12,7 +12,37 @@ module.exports.getAllProducts = (req, res) => {
       res.json({ results: allProducts });
     })
     .catch((err) => {
-      console.log("There was an error while fetching all products", err);
+      res.json({ message: "There was an error while getting all products", error: err });
+    });
+};
+
+module.exports.getSingleProduct = (req, res) => {
+  Product.findOne({ _id: req.params.id })
+    .then((singleProduct) => {
+      res.json({ results: singleProduct });
+    })
+    .catch((err) => {
+      res.json({ message: 'There was an error while getting a single product', error: err})
+    });
+};
+
+module.exports.editSingleProduct = (req, res) => {
+  Product.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true, runValidators: true })
+    .then((updatedProduct) => {
+      res.json({ results: updatedProduct })
+    })
+    .catch((err) => {
+      res.json({ message: 'There was an error while editing a single product', error: err})
+    })
+}
+
+module.exports.deleteSingleProduct = (req, res) => {
+  Product.deleteOne({ _id: req.params.id })
+    .then((deletedProduct) => {
+      res.json({ results: deletedProduct });
+    })
+    .catch((err) => {
+      res.json({ message: 'There was an error while deleting a product', error: err})
     });
 };
 
@@ -22,6 +52,6 @@ module.exports.createProduct = (req, res) => {
       res.json({ results: newProduct });
     })
     .catch((err) => {
-      console.log("There was an error while creating a new product", err);
+      res.json({ message: 'There was an error while creating a product', error: err})
     });
 };
