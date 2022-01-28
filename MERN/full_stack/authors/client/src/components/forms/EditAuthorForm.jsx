@@ -18,6 +18,7 @@ const EditAuthorForm = () => {
       })
       .catch(err => {
         console.log("There was an error initializing Author info", err)
+        history.push('/authors/404')
       })
   }, []);
 

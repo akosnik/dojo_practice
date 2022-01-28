@@ -4,6 +4,7 @@ import NewAuthorForm from './components/forms/NewAuthorForm';
 import EditAuthorForm from './components/forms/EditAuthorForm';
 import AllAuthorsView from './components/views/AllAuthorsView';
 import OneAuthorView from './components/views/OneAuthorView';
+import AuthorNotFound from './components/views/AuthorNotFound';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route exact path='/authors/edit/:id'>
             <EditAuthorForm />
+          </Route>
+          <Route exact path='/authors/404'>
+            <AuthorNotFound />
           </Route>
         </Switch>
       </div>

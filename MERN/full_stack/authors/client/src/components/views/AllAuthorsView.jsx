@@ -9,6 +9,7 @@ const AllAuthorsView = () => {
   useEffect(() => {
     axios.get('http://localhost:8000/api/authors')
       .then(res => {
+        console.log(res)
         setAuthorList(res.data.results);
       })
       .catch(err => {
@@ -33,10 +34,21 @@ const AllAuthorsView = () => {
   }
 
 
+  const sortResults = (results) => {
+    results.sort((a, b) => {
+      var textA = a.name.toUpperCase();
+      var textB = b.name.toUpperCase();
+      return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    });
+    console.log('sorted', results)
+  }
+
+
   return (
     <div>
       <h2>All Authors</h2>
       <div className="Authors">
+        {sortResults(authorList)}
         {authorList.map((author, idx) => {
           return (
             <div key={idx} className="Author">
