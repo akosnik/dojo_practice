@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import Button from '@mui/material/Button'
 
 function DeleteAuthorButton(props) {
   const history = useHistory();
@@ -18,7 +19,7 @@ function DeleteAuthorButton(props) {
   }
   return (
     <>
-      <button className='btn btn-danger' onClick={() => handleDelete(id)}>Delete</button>
+      <Button variant='outlined' className='btn btn-danger' onClick={() => handleDelete(id)}>Delete</Button>
     </>
   );
 }
