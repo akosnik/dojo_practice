@@ -1,8 +1,8 @@
 import React from 'react';
-import CustomizedAccordions from '../Accordion';
 import axios from 'axios'
 import { useState, useEffect } from 'react';
-
+import CustomizedAccordions from '../Accordion';
+import NewButton from '../buttons/NewButton';
 
 
 const Home = () => {
@@ -22,6 +22,7 @@ const Home = () => {
     <div>
       <h1>CHECK IT</h1>
       {checklistList && <CustomizedAccordions list={checklistList} />}
+      <NewButton onClick={() => { console.log('New Template') }}>New Template</NewButton>
     </div>
   );
 }

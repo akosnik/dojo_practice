@@ -5,7 +5,6 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import { Button } from '@mui/material';
 import ChecklistInstance from './buttons/ChecklistInstance';
 import ChecklistTemplate from './buttons/ChecklistTemplate';
 
@@ -48,7 +47,6 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 
 export default function CustomizedAccordions({ list }) {
-
   const [expanded, setExpanded] = React.useState('panel1');
 
   const handleChange = (panel) => (event, newExpanded) => {
