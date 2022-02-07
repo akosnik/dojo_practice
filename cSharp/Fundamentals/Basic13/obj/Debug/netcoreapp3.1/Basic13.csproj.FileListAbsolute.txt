@@ -1,0 +1,13 @@
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\Basic13\bin\Debug\netcoreapp3.1\Basic13.exe
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\Basic13\bin\Debug\netcoreapp3.1\Basic13.deps.json
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\Basic13\bin\Debug\netcoreapp3.1\Basic13.runtimeconfig.json
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\Basic13\bin\Debug\netcoreapp3.1\Basic13.runtimeconfig.dev.json
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\Basic13\bin\Debug\netcoreapp3.1\Basic13.dll
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\Basic13\bin\Debug\netcoreapp3.1\Basic13.pdb
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\Basic13\obj\Debug\netcoreapp3.1\Basic13.csprojAssemblyReference.cache
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\Basic13\obj\Debug\netcoreapp3.1\Basic13.AssemblyInfoInputs.cache
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\Basic13\obj\Debug\netcoreapp3.1\Basic13.AssemblyInfo.cs
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\Basic13\obj\Debug\netcoreapp3.1\Basic13.csproj.CoreCompileInputs.cache
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\Basic13\obj\Debug\netcoreapp3.1\Basic13.dll
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\Basic13\obj\Debug\netcoreapp3.1\Basic13.pdb
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\Basic13\obj\Debug\netcoreapp3.1\Basic13.genruntimeconfig.cache
