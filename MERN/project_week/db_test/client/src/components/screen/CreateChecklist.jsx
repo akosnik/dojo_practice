@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import NewButton from '../buttons/NewButton';
-import EditItemButton from '../buttons/EditItem';
+import EditItem from '../buttons/EditItem';
 
 function CreateChecklist() {
 
@@ -9,7 +9,7 @@ function CreateChecklist() {
 
   const Item = () => {
     return (
-      <EditItemButton />
+      <EditItem />
     )
   }
 

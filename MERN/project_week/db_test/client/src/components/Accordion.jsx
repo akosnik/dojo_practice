@@ -9,7 +9,7 @@ import ChecklistInstance from './buttons/ChecklistInstance';
 import ChecklistTemplate from './buttons/ChecklistTemplate';
 
 const Accordion = styled((props) => (
-  <MuiAccordion disableGutters elevation={0} square {...props} />
+  <MuiAccordion disableGutters elevation={1} square {...props} />
 ))(({ theme }) => ({
   border: `1px solid ${theme.palette.divider}`,
   '&:not(:last-child)': {

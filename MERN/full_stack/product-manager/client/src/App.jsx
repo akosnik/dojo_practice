@@ -17,12 +17,15 @@ function App() {
           <Route exact path='/'>
             <AllProductsView />
           </Route>
+         
           <Route exact path='/products/view/:id'>
             <SingleProductView />
           </Route>
+        
           <Route exact path='/products/new'>
             <ProductForm />
           </Route>
+         
           <Route exact path='/products/edit/:id'>
             <EditProductForm />
           </Route>

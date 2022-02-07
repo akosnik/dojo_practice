@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     axios.get('http://localhost:8000/api/checklists')
       .then(res => {
-        // console.log(res)
+        console.log(res)
         setChecklistList(res.data.results);
       })
   }, [])
