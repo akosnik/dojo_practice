@@ -1,0 +1,13 @@
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\DeckOfCards\bin\Debug\netcoreapp3.1\DeckOfCards.exe
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\DeckOfCards\bin\Debug\netcoreapp3.1\DeckOfCards.deps.json
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\DeckOfCards\bin\Debug\netcoreapp3.1\DeckOfCards.runtimeconfig.json
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\DeckOfCards\bin\Debug\netcoreapp3.1\DeckOfCards.runtimeconfig.dev.json
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\DeckOfCards\bin\Debug\netcoreapp3.1\DeckOfCards.dll
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\DeckOfCards\bin\Debug\netcoreapp3.1\DeckOfCards.pdb
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\DeckOfCards\obj\Debug\netcoreapp3.1\DeckOfCards.csprojAssemblyReference.cache
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\DeckOfCards\obj\Debug\netcoreapp3.1\DeckOfCards.AssemblyInfoInputs.cache
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\DeckOfCards\obj\Debug\netcoreapp3.1\DeckOfCards.AssemblyInfo.cs
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\DeckOfCards\obj\Debug\netcoreapp3.1\DeckOfCards.csproj.CoreCompileInputs.cache
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\DeckOfCards\obj\Debug\netcoreapp3.1\DeckOfCards.dll
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\DeckOfCards\obj\Debug\netcoreapp3.1\DeckOfCards.pdb
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\DeckOfCards\obj\Debug\netcoreapp3.1\DeckOfCards.genruntimeconfig.cache

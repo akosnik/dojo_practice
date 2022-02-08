@@ -2,11 +2,19 @@
 
 namespace DeckOfCards
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+      Deck deck = new Deck();
+      deck.ShuffleDeck();
+
+      Player p1 = new Player("Playa1");
+      p1.DrawCard(deck);
+      p1.DrawCard(deck);
+      p1.DrawCard(deck);
+      //   [0,1,2];
+      p1.DiscardCard(5);
     }
+  }
 }
