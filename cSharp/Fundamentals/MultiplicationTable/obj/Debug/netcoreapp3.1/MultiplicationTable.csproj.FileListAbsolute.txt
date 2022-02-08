@@ -1,0 +1,13 @@
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\MultiplicationTable\bin\Debug\netcoreapp3.1\MultiplicationTable.exe
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\MultiplicationTable\bin\Debug\netcoreapp3.1\MultiplicationTable.deps.json
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\MultiplicationTable\bin\Debug\netcoreapp3.1\MultiplicationTable.runtimeconfig.json
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\MultiplicationTable\bin\Debug\netcoreapp3.1\MultiplicationTable.runtimeconfig.dev.json
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\MultiplicationTable\bin\Debug\netcoreapp3.1\MultiplicationTable.dll
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\MultiplicationTable\bin\Debug\netcoreapp3.1\MultiplicationTable.pdb
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\MultiplicationTable\obj\Debug\netcoreapp3.1\MultiplicationTable.csprojAssemblyReference.cache
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\MultiplicationTable\obj\Debug\netcoreapp3.1\MultiplicationTable.AssemblyInfoInputs.cache
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\MultiplicationTable\obj\Debug\netcoreapp3.1\MultiplicationTable.AssemblyInfo.cs
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\MultiplicationTable\obj\Debug\netcoreapp3.1\MultiplicationTable.csproj.CoreCompileInputs.cache
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\MultiplicationTable\obj\Debug\netcoreapp3.1\MultiplicationTable.dll
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\MultiplicationTable\obj\Debug\netcoreapp3.1\MultiplicationTable.pdb
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\MultiplicationTable\obj\Debug\netcoreapp3.1\MultiplicationTable.genruntimeconfig.cache
