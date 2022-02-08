@@ -32,9 +32,15 @@ namespace Human
     {
       return health;
     }
+
+    public void setHealth(int hp)
+    {
+      this.health = hp;
+    }
     public int Attack(Human target)
     {
       int hp = target.getHealth() - this.Strength * 5;
+      target.setHealth(hp);
       return hp;
     }
   }
