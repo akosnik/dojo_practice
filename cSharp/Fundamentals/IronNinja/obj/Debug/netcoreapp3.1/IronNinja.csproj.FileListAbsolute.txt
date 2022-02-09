@@ -1,0 +1,13 @@
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\IronNinja\bin\Debug\netcoreapp3.1\IronNinja.exe
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\IronNinja\bin\Debug\netcoreapp3.1\IronNinja.deps.json
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\IronNinja\bin\Debug\netcoreapp3.1\IronNinja.runtimeconfig.json
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\IronNinja\bin\Debug\netcoreapp3.1\IronNinja.runtimeconfig.dev.json
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\IronNinja\bin\Debug\netcoreapp3.1\IronNinja.dll
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\IronNinja\bin\Debug\netcoreapp3.1\IronNinja.pdb
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\IronNinja\obj\Debug\netcoreapp3.1\IronNinja.csprojAssemblyReference.cache
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\IronNinja\obj\Debug\netcoreapp3.1\IronNinja.AssemblyInfoInputs.cache
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\IronNinja\obj\Debug\netcoreapp3.1\IronNinja.AssemblyInfo.cs
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\IronNinja\obj\Debug\netcoreapp3.1\IronNinja.csproj.CoreCompileInputs.cache
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\IronNinja\obj\Debug\netcoreapp3.1\IronNinja.dll
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\IronNinja\obj\Debug\netcoreapp3.1\IronNinja.pdb
+C:\Users\allen\Desktop\dojo_practice\cSharp\Fundamentals\IronNinja\obj\Debug\netcoreapp3.1\IronNinja.genruntimeconfig.cache
