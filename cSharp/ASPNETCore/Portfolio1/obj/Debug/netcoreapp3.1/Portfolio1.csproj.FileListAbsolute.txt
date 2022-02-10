@@ -31,3 +31,4 @@ C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\Portfolio1\obj\Debug\netc
 C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\Portfolio1\obj\Debug\netcoreapp3.1\Portfolio1.pdb
 C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\Portfolio1\obj\Debug\netcoreapp3.1\Portfolio1.genruntimeconfig.cache
 C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\Portfolio1\obj\Debug\netcoreapp3.1\Portfolio1.csproj.CopyComplete
+C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\Portfolio1\obj\Debug\netcoreapp3.1\Razor\Views\RazorFun\Index.cshtml.g.cs

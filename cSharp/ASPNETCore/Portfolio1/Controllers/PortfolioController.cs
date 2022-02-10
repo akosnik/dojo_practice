@@ -1,25 +1,28 @@
 using Microsoft.AspNetCore.Mvc;
 
+using System;
+
 namespace Portfolio1.Controllers
 {
   public class PortfolioController : Controller
   {
     [HttpGet("")]
-    public string Index()
+    public ViewResult Index()
     {
-      return "Controller roller index";
+      return View();
     }
 
     [HttpGet("/projects")]
-    public string Projects()
+    public ViewResult Projects()
     {
-      return "These are my projects";
+      return View();
     }
 
     [HttpGet("/contact")]
-    public string Contact()
+    public ViewResult Contact()
     {
-      return "This is my contact info";
+      Console.WriteLine("CONSOLE");
+      return View();
     }
   }
 }

@@ -14412,6 +14412,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\csharp\\ASPNETCore\\Portfolio1\\Views\\RazorFun\\Index.cshtml",
+      "TargetPath": "Views\\RazorFun\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\csharp\\ASPNETCore\\Portfolio1\\Views\\Portfolio\\index.cshtml",
       "TargetPath": "Views\\Portfolio\\index.cshtml",
       "FileKind": "mvc"
