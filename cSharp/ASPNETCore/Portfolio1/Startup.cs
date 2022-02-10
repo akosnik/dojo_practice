@@ -29,11 +29,13 @@ namespace Portfolio1
 
       app.UseMvc();
 
+      app.UseRouting();
+
       app.UseEndpoints(endpoints =>
       {
         endpoints.MapGet("/", async context =>
               {
-                await context.Response.WriteAsync("Howdy!");
+                await context.Response.WriteAsync("Startup endpoint");
               });
       });
     }
