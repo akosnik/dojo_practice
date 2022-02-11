@@ -14400,6 +14400,12 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "TimeDisplay",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\csharp\\ASPNETCore\\TimeDisplay\\Views\\TimeDisplay\\index.cshtml",
+      "TargetPath": "Views\\TimeDisplay\\index.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

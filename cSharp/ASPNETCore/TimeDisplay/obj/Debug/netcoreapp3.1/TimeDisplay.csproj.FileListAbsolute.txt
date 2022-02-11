@@ -18,3 +18,14 @@ C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\TimeDisplay\obj\Debug\net
 C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\TimeDisplay\obj\Debug\netcoreapp3.1\TimeDisplay.dll
 C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\TimeDisplay\obj\Debug\netcoreapp3.1\TimeDisplay.pdb
 C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\TimeDisplay\obj\Debug\netcoreapp3.1\TimeDisplay.genruntimeconfig.cache
+C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\TimeDisplay\bin\Debug\netcoreapp3.1\TimeDisplay.Views.dll
+C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\TimeDisplay\bin\Debug\netcoreapp3.1\TimeDisplay.Views.pdb
+C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\TimeDisplay\obj\Debug\netcoreapp3.1\TimeDisplay.RazorAssemblyInfo.cache
+C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\TimeDisplay\obj\Debug\netcoreapp3.1\TimeDisplay.RazorAssemblyInfo.cs
+C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\TimeDisplay\obj\Debug\netcoreapp3.1\TimeDisplay.TagHelpers.input.cache
+C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\TimeDisplay\obj\Debug\netcoreapp3.1\TimeDisplay.TagHelpers.output.cache
+C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\TimeDisplay\obj\Debug\netcoreapp3.1\TimeDisplay.RazorCoreGenerate.cache
+C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\TimeDisplay\obj\Debug\netcoreapp3.1\Razor\Views\TimeDisplay\index.cshtml.g.cs
+C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\TimeDisplay\obj\Debug\netcoreapp3.1\TimeDisplay.RazorTargetAssemblyInfo.cs
+C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\TimeDisplay\obj\Debug\netcoreapp3.1\TimeDisplay.Views.pdb
+C:\Users\allen\Desktop\dojo_practice\csharp\ASPNETCore\TimeDisplay\obj\Debug\netcoreapp3.1\TimeDisplay.csproj.CopyComplete
