@@ -35,3 +35,6 @@ C:\Users\allen\Desktop\dojo_practice\cSharp\ASPNETCore\ViewModelFun\obj\Debug\ne
 C:\Users\allen\Desktop\dojo_practice\cSharp\ASPNETCore\ViewModelFun\obj\Debug\netcoreapp3.1\ViewModelFun.pdb
 C:\Users\allen\Desktop\dojo_practice\cSharp\ASPNETCore\ViewModelFun\obj\Debug\netcoreapp3.1\ViewModelFun.genruntimeconfig.cache
 C:\Users\allen\Desktop\dojo_practice\cSharp\ASPNETCore\ViewModelFun\obj\Debug\netcoreapp3.1\ViewModelFun.csproj.CopyComplete
+C:\Users\allen\Desktop\dojo_practice\cSharp\ASPNETCore\ViewModelFun\obj\Debug\netcoreapp3.1\Razor\Views\Home\Numbers.cshtml.g.cs
+C:\Users\allen\Desktop\dojo_practice\cSharp\ASPNETCore\ViewModelFun\obj\Debug\netcoreapp3.1\Razor\Views\Home\Users.cshtml.g.cs
+C:\Users\allen\Desktop\dojo_practice\cSharp\ASPNETCore\ViewModelFun\obj\Debug\netcoreapp3.1\Razor\Views\Home\SingleUser.cshtml.g.cs

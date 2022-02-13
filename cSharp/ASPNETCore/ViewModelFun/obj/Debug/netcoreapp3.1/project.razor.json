@@ -14417,6 +14417,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\ViewModelFun\\Views\\Home\\Numbers.cshtml",
+      "TargetPath": "Views\\Home\\Numbers.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\ViewModelFun\\Views\\Home\\SingleUser.cshtml",
+      "TargetPath": "Views\\Home\\SingleUser.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\ViewModelFun\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -14434,6 +14444,11 @@
     {
       "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\ViewModelFun\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\ViewModelFun\\Views\\Home\\Users.cshtml",
+      "TargetPath": "Views\\Home\\Users.cshtml",
       "FileKind": "mvc"
     }
   ],

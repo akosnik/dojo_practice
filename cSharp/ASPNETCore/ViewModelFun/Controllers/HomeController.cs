@@ -11,19 +11,57 @@ namespace ViewModelFun.Controllers
 {
   public class HomeController : Controller
   {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
-    {
-      _logger = logger;
-    }
-
+    [HttpGet("")]
     public IActionResult Index()
     {
-      string[] message = { "THIS IS A STRING MODEL MESSAGE", "message2" };
-      return View(message);
+      string message = "THIS IS MY MESSAGE";
+      return View(model: message);
     }
 
+    [HttpGet("numbers")]
+    public IActionResult Numbers()
+    {
+      int[] numbers = { 0, 1, 2, 3, 5, 7, 11 };
+      return View(model: numbers);
+    }
+
+    [HttpGet("user")]
+    public IActionResult SingleUser()
+    {
+      User user = new User()
+      {
+        FirstName = "Deltron",
+        LastName = "Zee"
+      };
+      return View(model: user);
+    }
+
+    [HttpGet("users")]
+    public IActionResult Users()
+    {
+      User a = new User()
+      {
+        FirstName = "Ace",
+        LastName = "Ventura"
+      };
+      User b = new User()
+      {
+        FirstName = "Bee",
+        LastName = "Agressive"
+      };
+      User c = new User()
+      {
+        FirstName = "Cici",
+        LastName = "Babcock"
+      };
+
+      List<User> users = new List<User>()
+      {
+        a, b, c
+      };
+
+      return View(model: users);
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
