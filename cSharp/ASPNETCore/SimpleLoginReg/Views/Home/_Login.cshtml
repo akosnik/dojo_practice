@@ -1,0 +1,23 @@
+@model Login
+
+<form class="d-flex flex-column" asp-action="Login" asp-controller="Home" method="post">
+  <h1 class="display-4 mx-auto">Login</h1>
+
+  <div class="mb-3">
+    <div class="d-flex justify-content-between">
+      <label asp-for="Email"></label>
+      <input asp-for="Email">
+    </div>
+    <span class="text-danger" asp-validation-for="Email"></span>
+  </div>
+
+  <div class="mb-3">
+    <div class="d-flex justify-content-between">
+      <label asp-for="Password"></label>
+      <input asp-for="Password">
+    </div>
+    <span class="text-danger" asp-validation-for="Password"></span>
+  </div>
+
+  <div class="align-self-end mb-3"><button type="submit" class="btn btn-primary">Submit</button></div>
+</form>

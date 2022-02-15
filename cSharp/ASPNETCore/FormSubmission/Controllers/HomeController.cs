@@ -31,8 +31,6 @@ namespace FormSubmission.Controllers
       {
         return View("Index");
       }
-
-
     }
 
     [HttpGet("result")]
