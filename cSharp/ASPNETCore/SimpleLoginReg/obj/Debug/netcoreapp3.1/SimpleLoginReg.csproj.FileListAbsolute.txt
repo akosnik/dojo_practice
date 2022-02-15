@@ -37,3 +37,4 @@ C:\Users\allen\Desktop\dojo_practice\cSharp\ASPNETCore\SimpleLoginReg\obj\Debug\
 C:\Users\allen\Desktop\dojo_practice\cSharp\ASPNETCore\SimpleLoginReg\obj\Debug\netcoreapp3.1\SimpleLoginReg.genruntimeconfig.cache
 C:\Users\allen\Desktop\dojo_practice\cSharp\ASPNETCore\SimpleLoginReg\obj\Debug\netcoreapp3.1\SimpleLoginReg.csproj.CopyComplete
 C:\Users\allen\Desktop\dojo_practice\cSharp\ASPNETCore\SimpleLoginReg\obj\Debug\netcoreapp3.1\Razor\Views\Home\_Login.cshtml.g.cs
+C:\Users\allen\Desktop\dojo_practice\cSharp\ASPNETCore\SimpleLoginReg\obj\Debug\netcoreapp3.1\Razor\Views\Home\Welcome.cshtml.g.cs

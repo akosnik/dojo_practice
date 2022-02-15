@@ -14442,6 +14442,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\SimpleLoginReg\\Views\\Home\\Welcome.cshtml",
+      "TargetPath": "Views\\Home\\Welcome.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\SimpleLoginReg\\Views\\Home\\_Registration.cshtml",
       "TargetPath": "Views\\Home\\_Registration.cshtml",
       "FileKind": "mvc"

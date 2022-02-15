@@ -9,29 +9,39 @@ using SimpleLoginReg.Models;
 
 namespace SimpleLoginReg.Controllers
 {
-    public class HomeController : Controller
+  public class HomeController : Controller
+  {
+
+    [HttpGet()]
+    public IActionResult Index()
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+      return View();
     }
+
+    [HttpPost("Login")]
+    public IActionResult Login(Login login)
+    {
+      if (ModelState.IsValid)
+      {
+        return RedirectToAction("Welcome");
+      }
+      return View("Index");
+    }
+
+    [HttpPost("Register")]
+    public IActionResult Register(Registration registration)
+    {
+      if (ModelState.IsValid)
+      {
+        return RedirectToAction("Welcome");
+      }
+      return View("Index");
+    }
+
+    [HttpGet("Welcome")]
+    public IActionResult Welcome()
+    {
+      return View("Welcome");
+    }
+  }
 }
