@@ -23,7 +23,7 @@ namespace RandomPasscode.Controllers
       string randomPass = "";
       for (int i = 0; i < 14; i++)
       {
-        randomPass = randomPass + chars[rand.Next(chars.Length)];
+        randomPass += chars[rand.Next(chars.Length)];
       }
       ViewBag.RandomPass = randomPass;
 

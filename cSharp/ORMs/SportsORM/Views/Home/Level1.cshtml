@@ -1,4 +1,4 @@
-<div class="card">
+﻿<div class="card">
     <div class="card-header bg-dark text-light">Level 1</div>
     <div class="card-body">
         <p>Using the SportsORM, complete all the following queries and show their results on Level1.cshtml.</p>
@@ -19,5 +19,185 @@
             <li>...every player with last name "Cooper" EXCEPT those with "Joshua" as the first name</li>
             <li>...all players with first name "Alexander" OR first name "Wyatt"</li>
         </ol>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-light">1 Women's Leagues</div>
+    <div class="card-body">
+        @{
+            foreach (League l in ViewBag.WomensLeagues)
+            {
+                <p>@l.Name</p>
+            }
+        }
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-light">2 Hockey Leagues</div>
+    <div class="card-body">
+        @{
+            foreach (League l in ViewBag.HockeyLeagues)
+            {
+                <p>@l.Name</p>
+            }
+        }
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-light">3 Non Football Leagues</div>
+    <div class="card-body">
+        @{
+            foreach (League l in ViewBag.NonFootballLeagues)
+            {
+                <p>@l.Name</p>
+            }
+        }
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-light">4 Conference Leagues</div>
+    <div class="card-body">
+        @{
+            foreach (League l in ViewBag.ConferenceLeagues)
+            {
+                <p>@l.Name</p>
+            }
+        }
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-light">5 Atlantic Leagues</div>
+    <div class="card-body">
+        @{
+            foreach (League l in ViewBag.AtlanticLeagues)
+            {
+                <p>@l.Name</p>
+            }
+        }
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-light">6 Dallas Teams</div>
+    <div class="card-body">
+        @{
+            foreach (Team t in ViewBag.DallasTeams)
+            {
+                <p>@t.TeamName</p>
+            }
+        }
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-light">7 Raptors Teams</div>
+    <div class="card-body">
+        @{
+            foreach (Team t in ViewBag.RaptorsTeams)
+            {
+                <p>@t.Location @t.TeamName</p>
+            }
+        }
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-light">8 City Teams</div>
+    <div class="card-body">
+        @{
+            foreach (Team t in ViewBag.CityTeams)
+            {
+                <p>@t.Location @t.TeamName</p>
+            }
+        }
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-light">9 T Teams</div>
+    <div class="card-body">
+        @{
+            foreach (Team t in ViewBag.TTeams)
+            {
+                <p>@t.TeamName</p>
+            }
+        }
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-light">10 Teams Location Alphabetical</div>
+    <div class="card-body">
+        @{
+            foreach (Team t in ViewBag.TeamsLocationAlphabetical)
+            {
+                <p>@t.Location @t.TeamName</p>
+            }
+        }
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-light">11 Teams Reverse Alphabetical</div>
+    <div class="card-body">
+        @{
+            foreach (Team t in ViewBag.TeamsReverseAlphabetical)
+            {
+                <p>@t.Location @t.TeamName</p>
+            }
+        }
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-light">12 Cooper Players</div>
+    <div class="card-body">
+        @{
+            foreach (Player p in ViewBag.CooperPlayers)
+            {
+                <p>@p.FirstName @p.LastName</p>
+            }
+        }
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-light">13 Joshua Players</div>
+    <div class="card-body">
+        @{
+            foreach (Player p in ViewBag.JoshuaPlayers)
+            {
+                <p>@p.FirstName @p.LastName</p>
+            }
+        }
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-light">14 Cooper not Joshua Players</div>
+    <div class="card-body">
+        @{
+            foreach (Player p in ViewBag.CooperNotJoshuaPlayers)
+            {
+                <p>@p.FirstName @p.LastName</p>
+            }
+        }
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header bg-dark text-light">15 Alexander or Wyatt Players</div>
+    <div class="card-body">
+        @{
+            foreach (Player p in ViewBag.AlexanderOrWyattPlayers)
+            {
+                <p>@p.FirstName @p.LastName</p>
+            }
+        }
     </div>
 </div>
