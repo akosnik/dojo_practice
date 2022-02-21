@@ -58,3 +58,6 @@ C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\CRUDelicious\obj\Debug\netcorea
 C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\CRUDelicious\obj\Debug\netcoreapp3.1\CRUDelicious.dll
 C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\CRUDelicious\obj\Debug\netcoreapp3.1\CRUDelicious.pdb
 C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\CRUDelicious\obj\Debug\netcoreapp3.1\CRUDelicious.genruntimeconfig.cache
+C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\CRUDelicious\obj\Debug\netcoreapp3.1\Razor\Views\Home\NewDish.cshtml.g.cs
+C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\CRUDelicious\obj\Debug\netcoreapp3.1\Razor\Views\Home\ViewDish.cshtml.g.cs
+C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\CRUDelicious\obj\Debug\netcoreapp3.1\Razor\Views\Home\EditDish.cshtml.g.cs

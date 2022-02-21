@@ -26,5 +26,63 @@ namespace CRUDelicious.Controllers
       List<Dish> AllDishes = _context.Dishes.ToList();
       return View(model: AllDishes);
     }
+
+    [HttpGet("dish/new")]
+    public IActionResult NewDish()
+    {
+      return View();
+    }
+
+    [HttpPost("dish/create")]
+    public IActionResult CreateDish(Dish dish)
+    {
+      if (ModelState.IsValid)
+      {
+        _context.Add(dish);
+        _context.SaveChanges();
+        return RedirectToAction("Index");
+      }
+      return View("NewDish");
+    }
+
+    [HttpGet("view/{dishID}")]
+    public IActionResult ViewDish(int dishID)
+    {
+      Dish dishToView = _context.Dishes.FirstOrDefault(d => d.DishId == dishID);
+      return View(dishToView);
+    }
+
+    [HttpGet("edit/{dishID}")]
+    public IActionResult EditDish(int dishID)
+    {
+      Dish dishToView = _context.Dishes.FirstOrDefault(d => d.DishId == dishID);
+      return View(dishToView);
+    }
+
+    [HttpPost("update/{dishID}")]
+    public IActionResult UpdateDish(int dishID, Dish editedDish)
+    {
+      Dish original = _context.Dishes.FirstOrDefault(d => d.DishId == dishID);
+      if (ModelState.IsValid)
+      {
+        original.Name = editedDish.Name;
+        original.Chef = editedDish.Chef;
+        original.Tastiness = editedDish.Tastiness;
+        original.Calories = editedDish.Calories;
+        original.Description = editedDish.Description;
+        _context.SaveChanges();
+        return RedirectToAction("Index");
+      }
+      return View("EditDish", model: original);
+    }
+
+    [HttpGet("delete/{dishID}")]
+    public IActionResult DeleteDish(int dishID)
+    {
+      Dish dish = _context.Dishes.SingleOrDefault(d => d.DishId == dishID);
+      _context.Dishes.Remove(dish);
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
   }
 }

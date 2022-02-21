@@ -1,0 +1,12 @@
+@model Dish
+<div class="w-50 mx-auto">
+  <div class="text-center border-bottom">
+    <h1>@Model.Name</h1>
+    <h3>@Model.Chef</h3>
+  </div>
+  <p>@Model.Description</p>
+  <p>Calories: @Model.Calories</p>
+  <p>Tastiness: @Model.Tastiness</p>
+  <a class="btn btn-warning" href="/edit/@Model.DishId">Edit</a>
+  <a class="btn btn-danger" href="/delete/@Model.DishId">Delete</a>
+</div>
