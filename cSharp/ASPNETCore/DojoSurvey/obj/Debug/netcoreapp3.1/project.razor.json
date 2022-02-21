@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\csharp\\ASPNETCore\\DojoSurvey\\DojoSurvey.csproj",
+  "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\DojoSurvey\\DojoSurvey.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14402,12 +14402,12 @@
   "RootNamespace": "DojoSurvey",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\csharp\\ASPNETCore\\DojoSurvey\\Views\\Survey\\Result.cshtml",
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\DojoSurvey\\Views\\Survey\\Result.cshtml",
       "TargetPath": "Views\\Survey\\Result.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\csharp\\ASPNETCore\\DojoSurvey\\Views\\Survey\\Index.cshtml",
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\DojoSurvey\\Views\\Survey\\Index.cshtml",
       "TargetPath": "Views\\Survey\\Index.cshtml",
       "FileKind": "mvc"
     }

@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\csharp\\ASPNETCore\\Portfolio1\\Portfolio1.csproj",
+  "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\Portfolio1\\Portfolio1.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14402,23 +14402,23 @@
   "RootNamespace": "Portfolio1",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\csharp\\ASPNETCore\\Portfolio1\\Views\\Portfolio\\contact.cshtml",
-      "TargetPath": "Views\\Portfolio\\contact.cshtml",
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\Portfolio1\\Views\\Portfolio\\Contact.cshtml",
+      "TargetPath": "Views\\Portfolio\\Contact.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\csharp\\ASPNETCore\\Portfolio1\\Views\\Portfolio\\projects.cshtml",
-      "TargetPath": "Views\\Portfolio\\projects.cshtml",
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\Portfolio1\\Views\\Portfolio\\Projects.cshtml",
+      "TargetPath": "Views\\Portfolio\\Projects.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\csharp\\ASPNETCore\\Portfolio1\\Views\\RazorFun\\Index.cshtml",
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\Portfolio1\\Views\\RazorFun\\Index.cshtml",
       "TargetPath": "Views\\RazorFun\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\csharp\\ASPNETCore\\Portfolio1\\Views\\Portfolio\\index.cshtml",
-      "TargetPath": "Views\\Portfolio\\index.cshtml",
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\Portfolio1\\Views\\Portfolio\\Index.cshtml",
+      "TargetPath": "Views\\Portfolio\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

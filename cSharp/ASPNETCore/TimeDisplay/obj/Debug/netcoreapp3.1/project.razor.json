@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\csharp\\ASPNETCore\\TimeDisplay\\TimeDisplay.csproj",
+  "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\TimeDisplay\\TimeDisplay.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14402,7 +14402,7 @@
   "RootNamespace": "TimeDisplay",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\csharp\\ASPNETCore\\TimeDisplay\\Views\\TimeDisplay\\index.cshtml",
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ASPNETCore\\TimeDisplay\\Views\\TimeDisplay\\index.cshtml",
       "TargetPath": "Views\\TimeDisplay\\index.cshtml",
       "FileKind": "mvc"
     }
