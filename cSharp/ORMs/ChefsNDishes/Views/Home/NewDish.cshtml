@@ -1,0 +1,60 @@
+@model Dish
+
+<form class="d-flex flex-column w-25 mx-auto" asp-action="CreateDish" asp-controller="Home" method="post">
+  <h1 class="display-4 mx-auto">Welcome</h1>
+
+  <div class="mb-3">
+    <div class="d-flex justify-content-between">
+      <label asp-for="ChefId"></label>
+      <select asp-for="ChefId">
+        @{
+          foreach (Chef c in ViewBag.Chefs)
+          {
+            <option value="@c.ChefId">@c.FirstName @c.LastName</option>
+          }
+        }
+      </select>
+    </div>
+    <span class="text-danger" asp-validation-for="Chef"></span>
+  </div>
+
+  <div class="mb-3">
+    <div class="d-flex justify-content-between">
+      <label asp-for="Name"></label>
+      <input asp-for="Name">
+    </div>
+    <span class="text-danger" asp-validation-for="Name"></span>
+  </div>
+
+  <div class="mb-3">
+    <div class="d-flex justify-content-between">
+      <label asp-for="Tastiness"></label>
+      <select asp-for="Tastiness">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <span class="text-danger" asp-validation-for="Tastiness"></span>
+  </div>
+
+  <div class="mb-3">
+    <div class="d-flex justify-content-between">
+      <label asp-for="Calories"></label>
+      <input asp-for="Calories">
+    </div>
+    <span class="text-danger" asp-validation-for="Calories"></span>
+  </div>
+
+  <div class="mb-3">
+    <div class="d-flex justify-content-between">
+      <label asp-for="Description"></label>
+      <input asp-for="Description">
+    </div>
+    <span class="text-danger" asp-validation-for="Description"></span>
+  </div>
+
+  <div class="align-self-end mb-3"><button type="submit" class="btn btn-primary">Add Dish</button></div>
+</form>

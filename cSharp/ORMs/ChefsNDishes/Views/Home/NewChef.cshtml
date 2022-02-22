@@ -1,0 +1,31 @@
+@model Chef
+
+<form class="d-flex flex-column w-25 mx-auto" asp-action="CreateChef" asp-controller="Home" method="post">
+  <h1 class="display-4 mx-auto">Welcome</h1>
+
+  <div class="mb-3">
+    <div class="d-flex flex-column">
+      <label asp-for="FirstName"></label>
+      <input asp-for="FirstName">
+    </div>
+    <span class="text-danger" asp-validation-for="FirstName"></span>
+  </div>
+
+  <div class="mb-3">
+    <div class="d-flex flex-column">
+      <label asp-for="LastName"></label>
+      <input asp-for="LastName">
+    </div>
+    <span class="text-danger" asp-validation-for="LastName"></span>
+  </div>
+
+  <div class="mb-3">
+    <div class="d-flex flex-column">
+      <label asp-for="DOB"></label>
+      <input asp-for="DOB">
+    </div>
+    <span class="text-danger" asp-validation-for="DOB"></span>
+  </div>
+
+  <div class="align-self-end mb-3"><button type="submit" class="btn btn-primary">Add Chef</button></div>
+</form>

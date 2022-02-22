@@ -2,7 +2,7 @@
 
 - Package install
 - dotnet add package Pomelo.EntityFrameworkCore.MySql --version 3.1.1
-- cod
+- dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.5
 
 connection string in appsettings.json
 

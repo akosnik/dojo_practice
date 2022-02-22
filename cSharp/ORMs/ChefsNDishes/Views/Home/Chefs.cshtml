@@ -1,0 +1,11 @@
+@model List<Chef>
+
+<div class="text-center">
+  <h1 class="display-4">Welcome</h1>
+  @{
+    foreach (Chef c in Model)
+    {
+      <p>@c.FirstName</p>
+    }
+  }
+</div>

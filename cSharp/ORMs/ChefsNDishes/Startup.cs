@@ -7,10 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using CRUDelicious.Models;
+using ChefsNDishes.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace CRUDelicious
+namespace ChefsNDishes
 {
   public class Startup
   {
@@ -25,6 +25,7 @@ namespace CRUDelicious
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddDbContext<MyContext>(options => options.UseMySql(Configuration["DBInfo:ConnectionString"]));
+
       services.AddControllersWithViews();
     }
 
