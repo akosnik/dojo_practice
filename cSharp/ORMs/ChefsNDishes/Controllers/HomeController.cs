@@ -41,6 +41,15 @@ namespace ChefsNDishes.Controllers
     {
       if (ModelState.IsValid)
       {
+        int now = int.Parse(DateTime.Now.ToString("yyyyMMdd"));
+        int dob = int.Parse(chef.DOB.ToString("yyyyMMdd"));
+        int age = (now - dob) / 10000;
+        if (age < 18)
+        {
+          ModelState.AddModelError("DOB", "Chef must be 18 or older to sign up.");
+          return View("NewChef");
+        }
+
         _context.Add(chef);
         _context.SaveChanges();
         return RedirectToAction("Chefs");
@@ -74,13 +83,10 @@ namespace ChefsNDishes.Controllers
         _context.SaveChanges();
         return RedirectToAction("Dishes");
       }
+      List<Chef> chefs = _context.Chefs.ToList();
+      ViewBag.Chefs = chefs;
       return View("NewDish");
     }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-      return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
   }
 }

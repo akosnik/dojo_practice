@@ -43,8 +43,6 @@ C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\ChefsNDishes\obj\Debug\netcorea
 C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\ChefsNDishes\obj\Debug\netcoreapp3.1\ChefsNDishes.TagHelpers.output.cache
 C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\ChefsNDishes\obj\Debug\netcoreapp3.1\ChefsNDishes.RazorCoreGenerate.cache
 C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\ChefsNDishes\obj\Debug\netcoreapp3.1\Razor\Views\Home\Chefs.cshtml.g.cs
-C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\ChefsNDishes\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\ChefsNDishes\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\ChefsNDishes\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\ChefsNDishes\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\ChefsNDishes\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs

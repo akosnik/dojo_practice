@@ -14407,11 +14407,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ChefsNDishes\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ChefsNDishes\\Views\\Home\\Dishes.cshtml",
       "TargetPath": "Views\\Home\\Dishes.cshtml",
       "FileKind": "mvc"
@@ -14419,11 +14414,6 @@
     {
       "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ChefsNDishes\\Views\\Home\\NewDish.cshtml",
       "TargetPath": "Views\\Home\\NewDish.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ChefsNDishes\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
