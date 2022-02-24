@@ -9,29 +9,36 @@ using ProductsCategories.Models;
 
 namespace ProductsCategories.Controllers
 {
-    public class HomeController : Controller
+  public class HomeController : Controller
+  {
+    private MyContext _context;
+    private readonly ILogger<HomeController> _logger;
+    public HomeController(ILogger<HomeController> logger, MyContext context)
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+      _context = context;
+      _logger = logger;
     }
+
+    [HttpGet("categories")]
+    public IActionResult Categories()
+    {
+      List<Category> allCategories = _context.Categories.ToList();
+      ViewBag.AllCategories = allCategories;
+      return View();
+    }
+
+    [HttpPost("category/create")]
+    public IActionResult CreateCategory(Category newCategory)
+    {
+      if (ModelState.IsValid)
+      {
+        _context.Add(newCategory);
+        _context.SaveChanges();
+        return RedirectToAction("Categories");
+      }
+      List<Category> allCategories = _context.Categories.ToList();
+      ViewBag.AllCategories = allCategories;
+      return View("Categories");
+    }
+  }
 }

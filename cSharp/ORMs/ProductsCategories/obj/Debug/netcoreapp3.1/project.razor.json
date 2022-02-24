@@ -14407,13 +14407,18 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ProductsCategories\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ProductsCategories\\Views\\Home\\OneCategory.cshtml",
+      "TargetPath": "Views\\Home\\OneCategory.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ProductsCategories\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ProductsCategories\\Views\\Home\\_NewCategory.cshtml",
+      "TargetPath": "Views\\Home\\_NewCategory.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ProductsCategories\\Views\\Home\\Products.cshtml",
+      "TargetPath": "Views\\Home\\Products.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14427,8 +14432,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ProductsCategories\\Views\\Home\\_AllCategories.cshtml",
+      "TargetPath": "Views\\Home\\_AllCategories.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ProductsCategories\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ProductsCategories\\Views\\Home\\Categories.cshtml",
+      "TargetPath": "Views\\Home\\Categories.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ProductsCategories\\Views\\Home\\OneProduct.cshtml",
+      "TargetPath": "Views\\Home\\OneProduct.cshtml",
       "FileKind": "mvc"
     },
     {
