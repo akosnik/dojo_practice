@@ -14437,6 +14437,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ProductsCategories\\Views\\Home\\_NewProduct.cshtml",
+      "TargetPath": "Views\\Home\\_NewProduct.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ProductsCategories\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -14449,6 +14454,11 @@
     {
       "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ProductsCategories\\Views\\Home\\OneProduct.cshtml",
       "TargetPath": "Views\\Home\\OneProduct.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\ProductsCategories\\Views\\Home\\_AllProducts.cshtml",
+      "TargetPath": "Views\\Home\\_AllProducts.cshtml",
       "FileKind": "mvc"
     },
     {

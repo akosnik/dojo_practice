@@ -1,0 +1,34 @@
+@model Category
+
+<h1 class="display-3">@Model.Name</h1>
+<div class="row">
+  <div class="col">
+    <h2 class="display-4">Products</h2>
+    @{
+      foreach (Association a in Model.Items)
+      {
+        <p>@a.Product.Name</p>
+      }
+    }
+  </div>
+  <div class="col">
+    <h2 class="display-4">Attach Product</h2>
+    <form asp-action="AddItem" method="post" style="max-width: 15rem;">
+      <div class="form-group">
+        <select name="ProductId" class="form-control">
+          @foreach (Product p in ViewBag.AllProducts)
+          {
+            if (!Model.Items.Any(p2 => p2.ProductId == p.ProductId))
+            {
+              <option value="@p.ProductId">@p.Name</option>
+            }
+          }
+        </select>
+      </div>
+      <input type="hidden" name="CategoryId" value="@Model.CategoryId">
+      <div class="form-group">
+        <input type="submit" value="Attach" class="btn btn-warning">
+      </div>
+    </form>
+  </div>
+</div>

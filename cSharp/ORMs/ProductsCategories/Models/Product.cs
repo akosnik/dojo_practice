@@ -19,6 +19,7 @@ namespace ProductsCategories.Models
 
     [Required]
     [DataType(DataType.Currency)]
+    [Range(0.01, 9999.99)]
     public float Price { get; set; }
 
     public DateTime CreatedAt { get; set; } = DateTime.Now;

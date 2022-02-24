@@ -62,3 +62,5 @@ C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\ProductsCategories\obj\Debug\ne
 C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\ProductsCategories\obj\Debug\netcoreapp3.1\Razor\Views\Home\_AllCategories.cshtml.g.cs
 C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\ProductsCategories\obj\Debug\netcoreapp3.1\Razor\Views\Home\_NewCategory.cshtml.g.cs
 C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\ProductsCategories\obj\Debug\netcoreapp3.1\Razor\Views\Home\OneCategory.cshtml.g.cs
+C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\ProductsCategories\obj\Debug\netcoreapp3.1\Razor\Views\Home\_AllProducts.cshtml.g.cs
+C:\Users\allen\Desktop\dojo_practice\cSharp\ORMs\ProductsCategories\obj\Debug\netcoreapp3.1\Razor\Views\Home\_NewProduct.cshtml.g.cs

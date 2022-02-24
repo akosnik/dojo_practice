@@ -1,0 +1,7 @@
+<div class="col">
+  <h1 class="display-4 mx-auto">All Products</h1>
+  @foreach (Product p in ViewBag.AllProducts)
+  {
+    <p><a href="products/@p.ProductId">@p.Name</a></p>
+  }
+</div>
