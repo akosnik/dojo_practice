@@ -14402,6 +14402,26 @@
   "RootNamespace": "WeddingPlanner",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\WeddingPlanner\\Views\\Home\\_Register.cshtml",
+      "TargetPath": "Views\\Home\\_Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\WeddingPlanner\\Views\\Wedding\\NewWedding.cshtml",
+      "TargetPath": "Views\\Wedding\\NewWedding.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\WeddingPlanner\\Views\\Home\\_Login.cshtml",
+      "TargetPath": "Views\\Home\\_Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\WeddingPlanner\\Views\\Wedding\\OneWedding.cshtml",
+      "TargetPath": "Views\\Wedding\\OneWedding.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\WeddingPlanner\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -14412,8 +14432,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\WeddingPlanner\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\WeddingPlanner\\Views\\Home\\LogReg.cshtml",
+      "TargetPath": "Views\\Home\\LogReg.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14432,8 +14452,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\WeddingPlanner\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\allen\\Desktop\\dojo_practice\\cSharp\\ORMs\\WeddingPlanner\\Views\\Wedding\\Weddings.cshtml",
+      "TargetPath": "Views\\Wedding\\Weddings.cshtml",
       "FileKind": "mvc"
     }
   ],

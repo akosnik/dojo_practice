@@ -1,0 +1,42 @@
+@model Wedding
+
+<div class="d-flex flex-column align-items-center">
+  <h1 class="display-4 mx-auto">Plan Your Wedding</h1>
+  <form class="d-flex flex-column" style="max-width: 15rem" asp-action="CreateWedding" asp-controller="Wedding" method="post">
+
+    <div class="mb-3">
+      <div class="d-flex flex-column">
+        <label asp-for="Wedder1"></label>
+        <input asp-for="Wedder1">
+      </div>
+      <span class="text-danger" asp-validation-for="Wedder1"></span>
+    </div>
+
+    <div class="mb-3">
+      <div class="d-flex flex-column">
+        <label asp-for="Wedder2"></label>
+        <input asp-for="Wedder2">
+      </div>
+      <span class="text-danger" asp-validation-for="Wedder2"></span>
+    </div>
+
+    <div class="mb-3">
+      <div class="d-flex flex-column">
+        <label asp-for="Date"></label>
+        <input asp-for="Date">
+      </div>
+      <span class="text-danger" asp-validation-for="Date"></span>
+    </div>
+
+    <div class="mb-3">
+      <div class="d-flex flex-column">
+        <label asp-for="Address"></label>
+        <input asp-for="Address">
+      </div>
+      <span class="text-danger" asp-validation-for="Address"></span>
+    </div>
+
+
+    <div class="align-self-end mb-3"><button type="submit" class="btn btn-primary">Create</button></div>
+  </form>
+</div>

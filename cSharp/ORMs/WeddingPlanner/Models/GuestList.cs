@@ -8,9 +8,9 @@ namespace WeddingPlanner.Models
   {
     [Key]
     public int GuestListId { get; set; }
-    public int GuestId { get; set; }
+    public int UserId { get; set; }
     public int WeddingId { get; set; }
-    public Guest Guest { get; set; }
+    public User User { get; set; }
     public Wedding Wedding { get; set; }
 
   }

@@ -10,6 +10,9 @@ namespace WeddingPlanner.Models
     public int WeddingId { get; set; }
 
     [Required]
+    public int CreatorId { get; set; }
+
+    [Required]
     public string Wedder1 { get; set; }
 
     [Required]
@@ -25,5 +28,6 @@ namespace WeddingPlanner.Models
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
     public List<GuestList> GuestList { get; set; }
+    public User Creator { get; set; }
   }
 }

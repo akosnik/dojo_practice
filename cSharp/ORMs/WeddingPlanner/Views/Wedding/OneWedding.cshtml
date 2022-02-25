@@ -1,0 +1,14 @@
+@model Wedding
+
+<h1>Wedding of @Model.Wedder1 & @Model.Wedder2</h1>
+<h4>Created by @Model.Creator.FirstName</h4>
+<h5>Guests that RSVP'd</h5>
+
+<ul>
+  @{
+    foreach (GuestList gl in Model.GuestList)
+    {
+      <li>@gl.User.FirstName @gl.User.LastName</li>
+    }
+  }
+</ul>
