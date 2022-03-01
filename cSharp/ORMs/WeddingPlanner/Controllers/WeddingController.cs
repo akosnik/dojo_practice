@@ -31,6 +31,7 @@ namespace WeddingPlanner.Controllers
       }
       User loggedInUser = _context.Users.FirstOrDefault(u => u.Email == email);
       ViewBag.LoggedInUser = loggedInUser;
+
       List<Wedding> weddings = _context.Weddings
       .Include(w => w.GuestList)
       .ThenInclude(gl => gl.User)
