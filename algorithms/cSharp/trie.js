@@ -40,17 +40,19 @@ class TrieNode {
 class Trie {
   constructor() {
     this.root = new TrieNode("");
+    this.suggestions = [];
   }
   addDict(word) {
     let currentNode = this.root;
     for (let i = 0; i < word.length; i++) {
       //an index for each letter of the word
-      let currentLetter = word[i].toLowerCase;
+      let currentLetter = word[i].toLowerCase();
+
       if (!currentNode.childrenDict[currentLetter]) {
         //if letter DOES NOT exist in the current node's dictionary of children nodes?
         let newNode = new TrieNode(currentLetter); //we create a new node with the letter
         currentNode.childrenDict[currentLetter] = newNode; //add that node into the dict
-        console.log("Added", currentLetter);
+        // console.log("Added", currentLetter);
       }
       currentNode = currentNode.childrenDict[currentLetter];
     }
@@ -59,7 +61,7 @@ class Trie {
   find(word) {
     let currentNode = this.root;
     for (let i = 0; i < word.length; i++) {
-      let currentLetter = word[i].toLowerCase;
+      let currentLetter = word[i].toLowerCase();
 
       //does the current letter have an entry in the current node's dictionary
       if (currentNode.childrenDict[currentLetter]) {
@@ -72,14 +74,53 @@ class Trie {
     }
     //we finish looping through the letters of the provided word
     //we need to check if the letter/node we finished at marks the end of a word
-    if (currentNode.isWord) {
-      return true;
+    return currentNode.isWord;
+  }
+  autofill(buildWord, currentNode = this.root) {
+    console.log(currentNode);
+
+    //we need to check the current letter of the word and see if it has children nodes
+    for (let i = 0; i < buildWord.length; i++) {
+      let currentLetter = buildWord[i].toLowerCase();
+      if (currentNode.childrenDict[currentLetter]) {
+        //while there is a letter to follow up on go to that letter
+        currentNode = currentNode.childrenDict[currentLetter];
+      } else {
+        //there's no letter to follow up on
+        //there's nothing more to suggest
+        return;
+      }
     }
-    return false;
+    //look at all the possible routes and go to each one using recursion
+    for (let [letter, node] of Object.entries(currentNode.childrenDict)) {
+      this.helperAutofill(buildWord, currentNode.childrenDict[letter]);
+    }
+    console.log(this.suggestions);
+  }
+  helperAutofill(buildWord, currentNode) {
+    if (!currentNode) {
+      return;
+    }
+    for (let [letter, node] of Object.entries(currentNode.childrenDict)) {
+      if (node) {
+        //if yes then build the suggested word
+        buildWord += letter;
+        if (node.isWord) {
+          this.suggestions.push(buildWord);
+        }
+        return this.helperAutofill(buildWord, node);
+      }
+    }
   }
 }
 
 myTrie = new Trie();
-myTrie.addDict("Hi");
-myTrie.addDict("Hip");
-console.log(myTrie.find("h"));
+myTrie.addDict("Cat");
+myTrie.addDict("Cats");
+myTrie.addDict("Catsup");
+myTrie.addDict("Cap");
+myTrie.addDict("Caps");
+myTrie.addDict("Cup");
+myTrie.addDict("Cups");
+
+myTrie.autofill("Ca");

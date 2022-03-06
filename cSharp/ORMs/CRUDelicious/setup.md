@@ -18,4 +18,8 @@ make models
 
 migrate
 
+- dotnet ef migrations add FirstMigration
+
+- dotnet ef database update
+
 make form
