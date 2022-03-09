@@ -23,7 +23,7 @@
 
 // ASSUMPTIONS
 // when we look at a value, if it is equal to our target we immediately return
-// When we look at a value, if it is smaller than our target we should check if the next value is larger than target. If so return index of larger value
+// When we look at a value, if it is smaller than our target we rerun the function with all values after our current index
 // We cannot use a for loop and get O(Log n) runtime complexity
 // We should use binary search
 // The target being less than or greater than all values may be hard to account for without special cases
@@ -42,11 +42,30 @@
 // call a recursive function using right half of current array
 // else call a recursive function using left half of current array
 
-var searchInsert = function (nums, target) {
-  // return index
+var searchInsert = function (nums, target, start = 0, end = nums.length - 1) {
+  if (start == end) {
+    if (target <= nums[start]) {
+      // console.log(start);
+      return start;
+    } else {
+      // console.log(start + 1);
+      return start + 1;
+    }
+  }
+  let midIdx = Math.ceil((start + end) / 2);
+  if (target == nums[midIdx]) {
+    // console.log(midIdx);
+    return midIdx;
+  } else if (target < nums[midIdx]) {
+    return searchInsert(nums, target, start, midIdx - 1);
+  } else {
+    return searchInsert(nums, target, midIdx, end);
+  }
 };
 
 searchInsert([5, 10, 15, 20, 25], 5); // 0
 searchInsert([5, 10, 15, 20, 25], 25); // 4
 searchInsert([5, 10, 15, 20, 25], -5); // 0
 searchInsert([5, 10, 15, 20, 25], 30); // 5
+searchInsert([5, 10, 15, 20, 25], 7); // 1
+searchInsert([5, 10, 15, 20, 25, 30], 7); // 1
