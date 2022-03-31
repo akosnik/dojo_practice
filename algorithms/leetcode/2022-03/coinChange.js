@@ -45,22 +45,37 @@
 // console.log(coinChange([4], 0)); //0
 // console.log(coinChange([4], 3)); //-1
 
-// console.log(coinChange([186, 419, 83, 408], 6249));
+// console.log(coinChange([186, 419, 83, 408], 6249)); Wrong output
 
-const coinChange = (coins, amount) => {
-  // dp[i] represents the least amount of coins that can make the value equals to the i
-  const dp = Array(amount + 1).fill(Infinity);
-  dp[0] = 0;
-  for (let i = 1; i <= amount; i++) {
-    for (const coin of coins) {
-      if (i - coin >= 0) {
-        dp[i] = Math.min(dp[i], dp[i - coin] + 1);
+// subtracting the largest coin value does not always result in least amount of coins
+// need to test all paths and save shortest route
+
+var coinChange = function (coins, amount) {
+  // subSolutions array tracks subAmounts as index and steps as value
+  // If we want to solve for sub amount 0, it requires 0 steps to acheive
+  // Impossible subAmounts are represented by an infinite amount of steps
+  subSolutions = Array(amount + 1).fill(Infinity);
+  subSolutions[0] = 0;
+
+  // subtract each coin from the current subAmount
+  // the difference is a subAmount one step away from the current Amount
+  // save the smaller value between the previous steps + 1 or the current steps value
+  for (let subAmount = 1; subAmount < subSolutions.length; subAmount++) {
+    for (var coin of coins) {
+      if (subAmount - coin >= 0) {
+        subSolutions[subAmount] = Math.min(
+          subSolutions[subAmount],
+          subSolutions[subAmount - coin] + 1
+        );
       }
     }
   }
-  return dp[amount] === Infinity ? -1 : dp[amount];
+  // using the subsolution of the final amount, return the amount of steps
+  // if the solution is impossible, return -1
+  if (subSolutions[amount] > amount) return -1;
+  return subSolutions[amount];
 };
 
-console.log(coinChange([1, 2, 5], 5)); //1
-console.log(coinChange([1, 2, 5], 4)); //2
-console.log(coinChange([1, 2, 5], 25)); //5
+console.log(coinChange([1, 4, 5], 13));
+console.log(coinChange([1, 4, 5], 0));
+console.log(coinChange([4, 5], 3));
