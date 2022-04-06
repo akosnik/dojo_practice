@@ -30,7 +30,7 @@ var longestPalindrome = function (s) {
     // r will check the right bound of the palindrome
     r = i;
     // move l and r outward while they are equal
-    while (s[l - 1] != null && s[l - 1] == s[r + 1]) {
+    while (s[l - 1] !== null && s[l - 1] == s[r + 1]) {
       l--;
       r++;
     }
